@@ -29,6 +29,9 @@ http://www.tooplate.com/view/2098-health
 
 </head>
 
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
      <!-- PRE LOADER -->
@@ -47,11 +50,11 @@ http://www.tooplate.com/view/2098-health
                <div class="row">
 
                     <div class="col-md-4 col-sm-5">
-                         <p>Welcome to Amma Home</p>
+                         <p id="wtt">Welcome to Amma Home</p>
                     </div>
 
                     <div class="col-md-8 col-sm-7 text-align-right">
-                         <span class="phone-icon"><i class="fa fa-phone"></i>8848 55 34 33</span>
+                         <span id="wpn" class="phone-icon"><i class="fa fa-phone"></i>8848 55 34 33</span>
                          <!-- <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 6:00 AM - 10:00 PM
                               (Mon-Fri)</span>
                          <span class="email-icon"><i class="fa fa-envelope-o"></i> <a
@@ -78,7 +81,7 @@ http://www.tooplate.com/view/2098-health
                     <div style="display:flex; flex-direction: row; justify-content: center; align-items: center;">
                          <img src="images/logo.jpg" alt="" width="30" height="30" style="border-radius: 0.6rem;">
                          <div style="margin-left: 10px;"></div>
-                         <a href="index.html" class="navbar-brand"></i>Amma Home <span><br>
+                         <a href="index.html" id="nt" class="navbar-brand"></i>Amma Home <span><br>
                               </span></a>
                          <!-- <p style="font-size: 10px;"></i>Alzheimer's Care Home</p> -->
                     </div>
@@ -111,10 +114,11 @@ http://www.tooplate.com/view/2098-health
                               <div class="caption">
                                    <div class="col-md-offset-1 col-md-10">
 
-                                        <h1 style="margin: 0;">Amma Home
+                                        <h1 id="mh" style="margin: 0;">Amma Home
                                         </h1>
-                                        <h1 style="font-size: 30px;">Alzheimer's Care Home</h1>
-                                        <h3>Providing Compassionate Care and Support for Your Loved One with Alzheimer's
+                                        <h1 id="msh" style="font-size: 30px;">Alzheimer's Care Home</h1>
+                                        <h3 id="md">Providing Compassionate Care and Support for Your Loved One
+                                             with Alzheimer's
                                         </h3>
                                         <br> <br>
                                         <a href="#about" class="section-btn btn btn-default btn-gray smoothScroll">More
@@ -126,10 +130,11 @@ http://www.tooplate.com/view/2098-health
                          <div class="item item-second">
                               <div class="caption">
                                    <div class="col-md-offset-1 col-md-10">
-                                        <h1 style="margin: 0;">Amma Home
+                                        <h1 id="mh" style="margin: 0;">Amma Home
                                         </h1>
-                                        <h1 style="font-size: 30px;">Alzheimer's Care Home</h1>
-                                        <h3>Providing Compassionate Care and Support for Your Loved One with Alzheimer's
+                                        <h1 id="msh" style="font-size: 30px;">Alzheimer's Care Home</h1>
+                                        <h3 id="md">Providing Compassionate Care and Support for Your Loved One
+                                             with Alzheimer's
                                         </h3>
                                         <br> <br>
                                         <a href="#about" class="section-btn btn btn-default btn-gray smoothScroll">More
@@ -141,10 +146,11 @@ http://www.tooplate.com/view/2098-health
                          <div class="item item-third">
                               <div class="caption">
                                    <div class="col-md-offset-1 col-md-10">
-                                        <h1 style="margin: 0;">Amma Home
+                                        <h1 id="mh" style="margin: 0;">Amma Home
                                         </h1>
-                                        <h1 style="font-size: 30px;">Alzheimer's Care Home</h1>
-                                        <h3>Providing Compassionate Care and Support for Your Loved One with Alzheimer's
+                                        <h1 id="msh" style="font-size: 30px;">Alzheimer's Care Home</h1>
+                                        <h3 id="md">Providing Compassionate Care and Support for Your Loved One
+                                             with Alzheimer's
                                         </h3>
                                         <br> <br>
                                         <a href="#about" class="section-btn btn btn-default btn-gray smoothScroll">More
@@ -153,7 +159,7 @@ http://www.tooplate.com/view/2098-health
                               </div>
                          </div>
 
-                         <div class="item item-fourth">
+                         <!-- <div class="item item-fourth">
                               <div class="caption">
                                    <div class="col-md-offset-1 col-md-10">
                                         <h1 style="margin: 0;">Amma Home
@@ -166,7 +172,7 @@ http://www.tooplate.com/view/2098-health
                                              About Us</a>
                                    </div>
                               </div>
-                         </div>
+                         </div> -->
 
                          <!-- <div class="item item-third">
                                    <div class="caption">
@@ -191,18 +197,20 @@ http://www.tooplate.com/view/2098-health
 
                     <div class="col-md-6 col-sm-6">
                          <div class="about-info">
-                              <h2 class="wow fadeInUp" data-wow-delay="0.6s">Welcome to Alzheimer's Care <i
+                              <h2 id="sth" class="wow fadeInUp" data-wow-delay="0.6s">Welcome to Alzheimer's Care <i
                                         class="fa fa-h-square"></i>ome</h2>
-                              <div class="wow fadeInUp" data-wow-delay="0.8s">
+                              <div id="std" class="wow fadeInUp" data-wow-delay="0.8s">
                                    <p>At an Alzheimer's care home, individuals with Alzheimer's or other forms of
                                         dementia receive specialized care and support to meet their unique needs. Amma
                                         home offer a safe and comfortable environment where residents can receive
                                         assistance with daily living activities, medication management, and other
-                                        services that cater to their specific needs. </p>
-                                   <p>These homes are staffed with trained caregivers who are equipped to handle the
+                                        services that cater to their specific needs.
+                                        <br><br>
+                                        These homes are staffed with trained caregivers who are equipped to handle the
                                         unique challenges that accompany caring for individuals with dementia. Families
                                         can rest assured that their loved ones are in good hands and receiving the care
-                                        they need to maintain their quality of life.</p>
+                                        they need to maintain their quality of life.
+                                   </p>
                               </div>
                               <!-- <figure class="profile wow fadeInUp" data-wow-delay="1s">
                                    <img src="images/author-image.jpg" class="img-responsive" alt="">
@@ -234,13 +242,13 @@ http://www.tooplate.com/view/2098-health
 
                     <div class="col-md-4 col-sm-6">
                          <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
-                              <img src="images/p1.jpg" class="img-responsive"
+                              <img id="foi" src="images/p1.jpg" class="img-responsive"
                                    style="object-fit: cover; height: 400px; width: 100%;" alt="">
 
                               <div class="team-info">
-                                   <h3>Sunil Kumar</h3>
-                                   <p>President</p>
-                                   <p><a href="#">Amma home charitable trust
+                                   <h3 id="fon">Sunil Kumar</h3>
+                                   <p id="fos">President</p>
+                                   <p><a id="fod" href="#">Amma home charitable trust
                                         </a></p>
                                    <div class="team-contact-info">
                                         <!-- <p><i class="fa fa-phone"></i> 010-020-0120</p> -->
@@ -256,14 +264,12 @@ http://www.tooplate.com/view/2098-health
 
                     <div class="col-md-4 col-sm-6">
                          <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
-                              <img src="images/p2.jpg" class="img-responsive"
+                              <img id="fti" src="images/p2.jpg" class="img-responsive"
                                    style="object-fit: cover; height: 400px; width: 100%;" alt="">
-
-
                               <div class="team-info">
-                                   <h3>Saritha</h3>
-                                   <p>Secretary</p>
-                                   <p><a href="#">Amma home charitable trust
+                                   <h3 id="ftn">Saritha</h3>
+                                   <p id="fts">Secretary</p>
+                                   <p><a id="ftd" href="#">Amma home charitable trust
                                         </a></p>
                                    <ul class="social-icon">
                                         <li><a href="#" class="fa fa-facebook-square"></a></li>
@@ -315,15 +321,14 @@ http://www.tooplate.com/view/2098-health
                     <div class="col-md-4 col-sm-6">
                          <!-- NEWS THUMB -->
                          <div class="news-thumb wow fadeInUp" data-wow-delay="0.4s">
-                              <a
-                                   href="#">
-                                   <img src="https://www.agewellfoundation.org/wp-content/uploads/2014/05/SM92845.jpeg"
+                              <a href="#">
+                                   <img id="aoi"
+                                        src="https://www.agewellfoundation.org/wp-content/uploads/2014/05/SM92845.jpeg"
                                         class="img-responsive" alt="">
                               </a>
                               <div class="news-info">
                                    <!-- <span>March 08, 2018</span> -->
-                                   <h3><a
-                                             href="#">News Paper Reading</a></h3>
+                                   <h3><a id="aot" href="#">News Paper Reading</a></h3>
                                    <!-- <p>A Community Specializing in Dementia and Alzheimer’s Care</p> -->
                                    <!-- <div class="author">
                                         <img src="images/author-image.jpg" class="img-responsive" alt="">
@@ -339,16 +344,16 @@ http://www.tooplate.com/view/2098-health
                     <div class="col-md-4 col-sm-6">
                          <!-- NEWS THUMB -->
                          <div class="news-thumb wow fadeInUp" data-wow-delay="0.6s">
-                              <a
-                                   href="#">
-                                   <img src="https://im.indiatimes.in/media/content/2018/Mar/embed_1520746419_725x725.jpg"
-                                        class="img-responsive" alt="" style="object-fit: cover; height: 230px; width: 100%;">
+                              <a href="#">
+                                   <img id="ati"
+                                        src="https://im.indiatimes.in/media/content/2018/Mar/embed_1520746419_725x725.jpg"
+                                        class="img-responsive" alt=""
+                                        style="object-fit: cover; height: 230px; width: 100%;">
                               </a>
                               <div class="news-info">
                                    <!-- <span>February 20, 2018</span> -->
-                                   <h3><a
-                                             href="#">
-                                            Jogging</a></h3>
+                                   <h3><a id="att" href="#">
+                                             Jogging</a></h3>
                                    <!-- <p>Tips for home care and nursing homes.</p> -->
                                    <!-- <div class="author">
                                         <img src="images/author-image.jpg" class="img-responsive" alt="">
@@ -365,12 +370,13 @@ http://www.tooplate.com/view/2098-health
                          <!-- NEWS THUMB -->
                          <div class="news-thumb wow fadeInUp" data-wow-delay="0.8s">
                               <a href="#">
-                                   <img src="https://akm-img-a-in.tosshub.com/indiatoday/the-elderly-may7-1_647_042718011551.jpg"
+                                   <img id="athi"
+                                        src="https://akm-img-a-in.tosshub.com/indiatoday/the-elderly-may7-1_647_042718011551.jpg"
                                         class="img-responsive" alt="">
                               </a>
                               <div class="news-info">
                                    <!-- <span>January 27, 2018</span> -->
-                                   <h3><a href="#">Indore Games</a></h3>
+                                   <h3><a id="atht" href="#">Indore Games</a></h3>
                                    <!-- <p>People living with dementia need to maintain social connections</p> -->
                                    <!-- <div class="author">
                                         <img src="images/author-image.jpg" class="img-responsive" alt="">
@@ -401,37 +407,34 @@ http://www.tooplate.com/view/2098-health
                     <div class="clearfix"></div>
 
                     <div class="col-md-4 col-sm-6">
-                         <h5>ID Card of client (Passport, Aadhar, Voters ID Card)
+                         <h5 id="r1">ID Card of client (Passport, Aadhar, Voters ID Card)
                               </h3>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                         <h5>Consent letter from all family members with ID proof.
+                         <h5 id="r2">Consent letter from all family members with ID proof.
                               </h3>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                         <h5>Dementia Certificate from Doctor
+                         <h5 id="r3">Dementia Certificate from Doctor
 
                               </h3>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                         <h5>Recent Blood Check up report.
+                         <h5 id="r4">Recent Blood Check up report.
 
                               </h3>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                         <h5> Presently using medicine in detail
+                         <h5 id="r6"> Presently using medicine in detail
 
                               </h3>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                         <h5> MRI Scan Report
-
+                         <h5 id="r7"> MRI Scan Report
                               </h3>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                         <h5> Contact number for Urgent Use
-
-
+                         <h5 id="r8"> Contact number for Urgent Use
                               </h3>
                     </div>
                     <div class="col-md-4 col-sm-6">
@@ -453,7 +456,7 @@ http://www.tooplate.com/view/2098-health
                </div>
 
 
-               <a href="#" style="background-color: rgb(255, 102, 0);"
+               <a id="dl" href="#" style="background-color: rgb(255, 102, 0);"
                     class="section-btn btn btn-default btn-gray smoothScroll">
                     Make Donation</a>
           </div>
@@ -540,7 +543,7 @@ http://www.tooplate.com/view/2098-health
             4. Copy only URL and paste it within the src="" field below
 	-->
           <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3912.715336103311!2d75.80233151480527!3d11.282323491979476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDE2JzU2LjQiTiA3NcKwNDgnMTYuMyJF!5e0!3m2!1sen!2sin!4v1680576768426!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-          <iframe
+          <iframe id="ml"
                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3912.715336103311!2d75.80233151480527!3d11.282323491979476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDE2JzU2LjQiTiA3NcKwNDgnMTYuMyJF!5e0!3m2!1sen!2sin!4v1680576768426!5m2!1sen!2sin"
                width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
      </section>
@@ -554,10 +557,10 @@ http://www.tooplate.com/view/2098-health
                     <div class="col-md-4 col-sm-4">
                          <div class="footer-thumb">
                               <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>
-                              <p>Alzheimer's Dementia's Daycare And Fulltime Care Home</p>
+                              <p id="cn">Alzheimer's Dementia's Daycare And Fulltime Care Home</p>
 
                               <div class="contact-info">
-                                   <p><i class="fa fa-phone"></i> 8848 55 34 33</p>
+                                   <p id="cpn"><i class="fa fa-phone"></i> 8848 55 34 33</p>
                                    <!-- <p><i class="fa fa-envelope-o"></i> <a href="#">info@company.com</a></p> -->
                               </div>
                          </div>
@@ -572,11 +575,12 @@ http://www.tooplate.com/view/2098-health
                                    </div> -->
                                    <div class="stories-info">
                                         <a href="#">
-                                             <h5>Amma Home Charitable Trust
+                                             <h5 id="ait">Amma Home Charitable Trust
                                              </h5>
                                         </a>
                                         <br>
-                                        <span>( Reg:232 LV 2013) Pachakkil , Malaparamba , Kozhikode - 673009</span>
+                                        <span id="dai">( Reg:232 LV 2013) Pachakkil , Malaparamba , Kozhikode -
+                                             673009</span>
                                    </div>
                               </div>
 
@@ -596,9 +600,12 @@ http://www.tooplate.com/view/2098-health
                          <div class="footer-thumb">
                               <div class="opening-hours">
                                    <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
-                                   <p>Monday - Friday <span>06:00 AM - 10:00 PM</span></p>
-                                   <p>Saturday <span>09:00 AM - 08:00 PM</span></p>
-                                   <p>Sunday <span>09:00 AM - 08:00 PM</span></p>
+                                   <p><span>Monday - Friday </span><span id="mfs">06:00 AM</span>- <span id="mfe">10:00
+                                             PM</span></p>
+                                   <p><span>Saturday</span> <span id="sats">09:00 AM</span>-<span id="sate">08:00
+                                             PM</span></p>
+                                   <p><span>Sunday</span> <span id="suns">09:00 AM</span>-<span id="sune">08:00
+                                             PM</span></p>
                               </div>
 
                               <!-- <ul class="social-icon">
@@ -636,6 +643,62 @@ http://www.tooplate.com/view/2098-health
                </div>
           </div>
      </footer>
+
+     <script>
+          axios.get('https://amma-home-em3c5.ondigitalocean.app/content/json')
+               .then(response => {
+                    console.log(response.data);
+                    data = response.data;
+               })
+               .catch(error => {
+                    console.log(error);
+               });
+
+
+          document.getElementById("wtt").innerHTML = data.wtt;
+          document.getElementById("wpn").innerHTML = data.wpn;
+          document.getElementById("nt").innerHTML = data.nt;
+          document.getElementById("mh").innerHTML = data.mh;
+          document.getElementById("msh").innerHTML = data.msh;
+          document.getElementById("md").innerHTML = data.md;
+          document.getElementById("sth").innerHTML = data.sth;
+          document.getElementById("std").innerHTML = data.std;
+          document.getElementById("foi").setAttribute("src", data.foi);
+          document.getElementById("fon").innerHTML = data.fon;
+          document.getElementById("fos").innerHTML = data.fos;
+          document.getElementById("fod").innerHTML = data.fod;
+          document.getElementById("fti").setAttribute("src", data.fti);
+          document.getElementById("ftn").innerHTML = data.ftn;
+          document.getElementById("fts").innerHTML = data.fts;
+          document.getElementById("ftd").innerHTML = data.ftd;
+          document.getElementById("aoi").setAttribute("src", data.aoi);
+          document.getElementById("aot").innerHTML = data.aot;
+          document.getElementById("ati").setAttribute("src", data.ati);
+          document.getElementById("att").innerHTML = data.att;
+          document.getElementById("athi").setAttribute("src", data.athi);
+          document.getElementById("atht").innerHTML = data.atht;
+          document.getElementById("r1").innerHTML = data.r1;
+          document.getElementById("r2").innerHTML = data.r2;
+          document.getElementById("r3").innerHTML = data.r3;
+          document.getElementById("r4").innerHTML = data.r4;
+          document.getElementById("r5").innerHTML = data.r5;
+          document.getElementById("r6").innerHTML = data.r6;
+          document.getElementById("r7").innerHTML = data.r7;
+          document.getElementById("r8").innerHTML = data.r8;
+          document.getElementById("r8").innerHTML = data.r8;
+          document.getElementById("dl").setAttribute("href", data.dl);
+          document.getElementById("ml").src = data.ml;
+          document.getElementById("cn").innerHTML = data.cn;
+          document.getElementById("cpn").innerHTML = data.cpn;
+          document.getElementById("ait").innerHTML = data.ait;
+          document.getElementById("dai").innerHTML = data.dai;
+          document.getElementById("mfs").innerHTML = data.mfs;
+          document.getElementById("mfe").innerHTML = data.mfe;
+          document.getElementById("sats").innerHTML = data.sats;
+          document.getElementById("sate").innerHTML = data.sate;
+          document.getElementById("suns").innerHTML = data.suns;
+          document.getElementById("sune").innerHTML = data.sune;
+     </script>
 
      <!-- SCRIPTS -->
      <script src="js/jquery.js"></script>

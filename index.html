@@ -50,7 +50,7 @@ http://www.tooplate.com/view/2098-health
                <div class="row">
 
                     <div class="col-md-4 col-sm-5">
-                         <p id="wtt">Welcome to Amma Home</p>
+                         <p id="wtt">Welcomefef</p>
                     </div>
 
                     <div class="col-md-8 col-sm-7 text-align-right">
@@ -197,8 +197,7 @@ http://www.tooplate.com/view/2098-health
 
                     <div class="col-md-6 col-sm-6">
                          <div class="about-info">
-                              <h2 id="sth" class="wow fadeInUp" data-wow-delay="0.6s">Welcome to Alzheimer's Care <i
-                                        class="fa fa-h-square"></i>ome</h2>
+                              <h2 id="sth" class="wow fadeInUp" data-wow-delay="0.6s">Welcome to Alzheimer's Care Home</h2>
                               <div id="std" class="wow fadeInUp" data-wow-delay="0.8s">
                                    <p>At an Alzheimer's care home, individuals with Alzheimer's or other forms of
                                         dementia receive specialized care and support to meet their unique needs. Amma
@@ -647,57 +646,58 @@ http://www.tooplate.com/view/2098-health
      <script>
           axios.get('https://amma-home-em3c5.ondigitalocean.app/content/json')
                .then(response => {
-                    console.log(response.data);
-                    data = response.data;
+                    console.log(response.data.data);
+                    data = response.data.data;
+                    document.getElementById("wtt").innerHTML = data.wtt;
+                    document.getElementById("wpn").innerHTML = data.wpn;
+                    document.getElementById("nt").innerHTML = data.nt;
+                    document.getElementById("mh").innerHTML = data.mh;
+                    document.getElementById("msh").innerHTML = data.msh;
+                    document.getElementById("md").innerHTML = data.md;
+                    document.getElementById("sth").innerHTML = data.sth;
+                    document.getElementById("std").innerHTML = data.std;
+                    document.getElementById("foi").setAttribute("src", data.foi);
+                    document.getElementById("fon").innerHTML = data.fon;
+                    document.getElementById("fos").innerHTML = data.fos;
+                    document.getElementById("fod").innerHTML = data.fod;
+                    document.getElementById("fti").setAttribute("src", data.fti);
+                    document.getElementById("ftn").innerHTML = data.ftn;
+                    document.getElementById("fts").innerHTML = data.fts;
+                    document.getElementById("ftd").innerHTML = data.ftd;
+                    document.getElementById("aoi").setAttribute("src", data.aoi);
+                    document.getElementById("aot").innerHTML = data.aot;
+                    document.getElementById("ati").setAttribute("src", data.ati);
+                    document.getElementById("att").innerHTML = data.att;
+                    document.getElementById("athi").setAttribute("src", data.athi);
+                    document.getElementById("atht").innerHTML = data.atht;
+                    document.getElementById("r1").innerHTML = data.r1;
+                    document.getElementById("r2").innerHTML = data.r2;
+                    document.getElementById("r3").innerHTML = data.r3;
+                    document.getElementById("r4").innerHTML = data.r4;
+                    document.getElementById("r5").innerHTML = data.r5;
+                    document.getElementById("r6").innerHTML = data.r6;
+                    document.getElementById("r7").innerHTML = data.r7;
+                    document.getElementById("r8").innerHTML = data.r8;
+                    document.getElementById("r8").innerHTML = data.r8;
+                    document.getElementById("dl").setAttribute("href", data.dl);
+                    document.getElementById("ml").src = data.ml;
+                    document.getElementById("cn").innerHTML = data.cn;
+                    document.getElementById("cpn").innerHTML = data.cpn;
+                    document.getElementById("ait").innerHTML = data.ait;
+                    document.getElementById("dai").innerHTML = data.dai;
+                    document.getElementById("mfs").innerHTML = data.mfs;
+                    document.getElementById("mfe").innerHTML = data.mfe;
+                    document.getElementById("sats").innerHTML = data.sats;
+                    document.getElementById("sate").innerHTML = data.sate;
+                    document.getElementById("suns").innerHTML = data.suns;
+                    document.getElementById("sune").innerHTML = data.sune;
                })
                .catch(error => {
                     console.log(error);
                });
 
 
-          document.getElementById("wtt").innerHTML = data.wtt;
-          document.getElementById("wpn").innerHTML = data.wpn;
-          document.getElementById("nt").innerHTML = data.nt;
-          document.getElementById("mh").innerHTML = data.mh;
-          document.getElementById("msh").innerHTML = data.msh;
-          document.getElementById("md").innerHTML = data.md;
-          document.getElementById("sth").innerHTML = data.sth;
-          document.getElementById("std").innerHTML = data.std;
-          document.getElementById("foi").setAttribute("src", data.foi);
-          document.getElementById("fon").innerHTML = data.fon;
-          document.getElementById("fos").innerHTML = data.fos;
-          document.getElementById("fod").innerHTML = data.fod;
-          document.getElementById("fti").setAttribute("src", data.fti);
-          document.getElementById("ftn").innerHTML = data.ftn;
-          document.getElementById("fts").innerHTML = data.fts;
-          document.getElementById("ftd").innerHTML = data.ftd;
-          document.getElementById("aoi").setAttribute("src", data.aoi);
-          document.getElementById("aot").innerHTML = data.aot;
-          document.getElementById("ati").setAttribute("src", data.ati);
-          document.getElementById("att").innerHTML = data.att;
-          document.getElementById("athi").setAttribute("src", data.athi);
-          document.getElementById("atht").innerHTML = data.atht;
-          document.getElementById("r1").innerHTML = data.r1;
-          document.getElementById("r2").innerHTML = data.r2;
-          document.getElementById("r3").innerHTML = data.r3;
-          document.getElementById("r4").innerHTML = data.r4;
-          document.getElementById("r5").innerHTML = data.r5;
-          document.getElementById("r6").innerHTML = data.r6;
-          document.getElementById("r7").innerHTML = data.r7;
-          document.getElementById("r8").innerHTML = data.r8;
-          document.getElementById("r8").innerHTML = data.r8;
-          document.getElementById("dl").setAttribute("href", data.dl);
-          document.getElementById("ml").src = data.ml;
-          document.getElementById("cn").innerHTML = data.cn;
-          document.getElementById("cpn").innerHTML = data.cpn;
-          document.getElementById("ait").innerHTML = data.ait;
-          document.getElementById("dai").innerHTML = data.dai;
-          document.getElementById("mfs").innerHTML = data.mfs;
-          document.getElementById("mfe").innerHTML = data.mfe;
-          document.getElementById("sats").innerHTML = data.sats;
-          document.getElementById("sate").innerHTML = data.sate;
-          document.getElementById("suns").innerHTML = data.suns;
-          document.getElementById("sune").innerHTML = data.sune;
+
      </script>
 
      <!-- SCRIPTS -->

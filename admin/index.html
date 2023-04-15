@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <meta http-equiv="refresh" content="0; URL=https://amma-home-em3c5.ondigitalocean.app/content/edit"> -->
+    <title>Admin</title>
+</head>
+
+<body>
+    <form class="max-w-xs mx-auto mt-8" id="login-form">
+        <div class="mb-4">
+            <label class="block text-gray-700 font-bold mb-2" for="username">
+                Username
+            </label>
+            <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="username" type="text" placeholder="Username">
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700 font-bold mb-2" for="password">
+                Password
+            </label>
+            <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="password" type="password" placeholder="Password">
+        </div>
+        <div class="flex items-center justify-between">
+            <button id="login-button"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="submit">
+                Login
+            </button>
+        </div>
+    </form>
+
+    <script>
+        const loginForm = document.getElementById('login-form');
+
+        loginForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            console.log(username, password);
+
+            if (username === 'admin' && password === 'admin@321') {
+                window.location.href = 'https://amma-home-em3c5.ondigitalocean.app/content/edit';
+            } else {
+                alert('Invalid username or password.');
+            }
+        });
+
+    </script>
+</body>
+
+</html>

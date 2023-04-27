@@ -260,14 +260,14 @@ http://www.tooplate.com/view/2098-health
                height: 100%;
           }
      </style>
-     
+
      <div class="container">
           <h2 id="s1t">Gallery</h2>
      </div>
      <div class="container">
           <div class="videogallery">
                <div class="video">
-                    <iframe id="vidg1" width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1"
+                    <iframe id="vidg1" width="560" height="315" src="https://www.youtube.com/embed/"
                          title="Video 1" frameborder="0"
                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                          allowfullscreen></iframe>
@@ -846,6 +846,9 @@ http://www.tooplate.com/view/2098-health
                     document.getElementById("imgg6").setAttribute("src", data.imgg6);
                     document.getElementById("imgg7").setAttribute("src", data.imgg7);
                     document.getElementById("imgg8").setAttribute("src", data.imgg8);
+                    document.getElementById("vidg1").src = "https://www.youtube.com/embed/" + data.vidg1;
+                    document.getElementById("vidg2").src = "https://www.youtube.com/embed/" + data.vidg2;
+                    document.getElementById("vidg3").src = "https://www.youtube.com/embed/" + data.vidg3;
                     document.getElementById("wtt").innerHTML = data.wtt;
                     document.getElementById("wpn").innerHTML = data.wpn;
                     document.getElementById("nt").innerHTML = data.nt;
@@ -904,12 +907,6 @@ http://www.tooplate.com/view/2098-health
                     document.getElementById("s7t").innerHTML = data.s7t;
                     document.getElementById("s8t").innerHTML = data.s8t;
                     document.getElementById("s9t").innerHTML = data.s9t;
-                    document.getElementById("vidg1").src = data.vidg1;
-                    document.getElementById("vidg2").src = data.vidg2;
-                    document.getElementById("vidg3").src = data.vidg3;
-                    document.getElementById("vidg4").src = data.vidg4;
-
-
                })
                .catch(error => {
                     console.log(error);

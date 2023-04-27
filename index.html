@@ -260,6 +260,7 @@ http://www.tooplate.com/view/2098-health
                height: 100%;
           }
      </style>
+     
      <div class="container">
           <h2 id="s1t">Gallery</h2>
      </div>
@@ -292,7 +293,6 @@ http://www.tooplate.com/view/2098-health
           </div>
      </div>
 
-
      <style>
           .gallery {
                display: grid;
@@ -312,17 +312,24 @@ http://www.tooplate.com/view/2098-health
           }
      </style>
 
-
      <div style="margin-top: 30px;" class="container">
           <div class="gallery">
-               <img id="imgg1" src="https://via.placeholder.com/500x350" alt="Image 1">
-               <img id="imgg2" src="https://via.placeholder.com/500x350" alt="Image 2">
-               <img id="imgg3" src="https://via.placeholder.com/500x350" alt="Image 3">
-               <img id="imgg4" src="https://via.placeholder.com/500x350" alt="Image 4">
-               <img id="imgg5" src="https://via.placeholder.com/500x350" alt="Image 5">
-               <img id="imgg6" src="https://via.placeholder.com/500x350" alt="Image 6">
-               <img id="imgg7" src="https://via.placeholder.com/500x350" alt="Image 7">
-               <img id="imgg8" src="https://via.placeholder.com/500x350" alt="Image 8">
+               <img id="imgg1" style="object-fit: cover; width: 100%; height: 200px;"
+                    src="https://via.placeholder.com/500x350" alt="Image 1">
+               <img id="imgg2" style="object-fit: cover; width: 100%; height: 200px;"
+                    src="https://via.placeholder.com/500x350" alt="Image 2">
+               <img id="imgg3" style="object-fit: cover; width: 100%; height: 200px;"
+                    src="https://via.placeholder.com/500x350" alt="Image 3">
+               <img id="imgg4" style="object-fit: cover; width: 100%; height: 200px;"
+                    src="https://via.placeholder.com/500x350" alt="Image 4">
+               <img id="imgg5" style="object-fit: cover; width: 100%; height: 200px;"
+                    src="https://via.placeholder.com/500x350" alt="Image 5">
+               <img id="imgg6" style="object-fit: cover; width: 100%; height: 200px;"
+                    src="https://via.placeholder.com/500x350" alt="Image 6">
+               <img id="imgg7" style="object-fit: cover; width: 100%; height: 200px;"
+                    src="https://via.placeholder.com/500x350" alt="Image 7">
+               <img id="imgg8" style="object-fit: cover; width: 100%; height: 200px;"
+                    src="https://via.placeholder.com/500x350" alt="Image 8">
           </div>
      </div>
 
@@ -831,6 +838,14 @@ http://www.tooplate.com/view/2098-health
                .then(response => {
                     console.log(response.data.data);
                     data = response.data.data;
+                    document.getElementById("imgg1").setAttribute("src", data.imgg1);
+                    document.getElementById("imgg2").setAttribute("src", data.imgg2);
+                    document.getElementById("imgg3").setAttribute("src", data.imgg3);
+                    document.getElementById("imgg4").setAttribute("src", data.imgg4);
+                    document.getElementById("imgg5").setAttribute("src", data.imgg5);
+                    document.getElementById("imgg6").setAttribute("src", data.imgg6);
+                    document.getElementById("imgg7").setAttribute("src", data.imgg7);
+                    document.getElementById("imgg8").setAttribute("src", data.imgg8);
                     document.getElementById("wtt").innerHTML = data.wtt;
                     document.getElementById("wpn").innerHTML = data.wpn;
                     document.getElementById("nt").innerHTML = data.nt;
@@ -874,22 +889,12 @@ http://www.tooplate.com/view/2098-health
                     document.getElementById("cpn").innerHTML = data.cpn;
                     document.getElementById("ait").innerHTML = data.ait;
                     document.getElementById("dai").innerHTML = data.dai;
-                    //time
                     document.getElementById("mfs").textContent = data.mfs;
                     document.getElementById("mfe").textContent = data.mfe;
                     document.getElementById("sats").textContent = data.sats;
                     document.getElementById("sate").textContent = data.sate;
                     document.getElementById("suns").textContent = data.suns;
                     document.getElementById("sune").textContent = data.sune;
-                    // today
-                    document.getElementById("imgg1").setAttribute("src", data.imgg1);
-                    document.getElementById("imgg2").setAttribute("src", data.imgg2);
-                    document.getElementById("imgg3").setAttribute("src", data.imgg3);
-                    document.getElementById("imgg4").setAttribute("src", data.imgg4);
-                    document.getElementById("imgg5").setAttribute("src", data.imgg5);
-                    document.getElementById("imgg6").setAttribute("src", data.imgg6);
-                    document.getElementById("imgg7").setAttribute("src", data.imgg7);
-                    document.getElementById("imgg8").setAttribute("src", data.imgg8);
                     document.getElementById("s1t").innerHTML = data.s1t;
                     document.getElementById("s2t").innerHTML = data.s2t;
                     document.getElementById("s3t").innerHTML = data.s3t;

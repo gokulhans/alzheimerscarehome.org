@@ -26,6 +26,7 @@ http://www.tooplate.com/view/2098-health
 
      <!-- MAIN CSS -->
      <link rel="stylesheet" href="css/tooplate-style.css">
+     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
 </head>
 
@@ -35,6 +36,7 @@ http://www.tooplate.com/view/2098-health
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
      <!-- PRE LOADER -->
+
      <section class="preloader">
           <div class="spinner">
 
@@ -231,6 +233,99 @@ http://www.tooplate.com/view/2098-health
           </div>
      </section>
 
+     <style>
+          .videogallery {
+               display: grid;
+               grid-template-columns: repeat(3, 1fr);
+               gap: 20px;
+          }
+
+          @media (max-width: 768px) {
+               .videogallery {
+                    grid-template-columns: repeat(1, 1fr);
+               }
+          }
+
+          .video {
+               position: relative;
+               padding-bottom: 56.25%;
+               height: 0;
+          }
+
+          .video iframe {
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+          }
+     </style>
+     <div class="container">
+          <h2 id="s1t">Gallery</h2>
+     </div>
+     <div class="container">
+          <div class="videogallery">
+               <div class="video">
+                    <iframe id="vidg1" width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1"
+                         title="Video 1" frameborder="0"
+                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                         allowfullscreen></iframe>
+               </div>
+               <div class="video">
+                    <iframe id="vidg2" width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2"
+                         title="Video 2" frameborder="0"
+                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                         allowfullscreen></iframe>
+               </div>
+               <div class="video">
+                    <iframe id="vidg3" width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_3"
+                         title="Video 3" frameborder="0"
+                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                         allowfullscreen></iframe>
+               </div>
+               <!-- <div class="video">
+                    <iframe id="vidg4" width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_4" title="Video 4"
+                         frameborder="0"
+                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                         allowfullscreen></iframe>
+               </div> -->
+          </div>
+     </div>
+
+
+     <style>
+          .gallery {
+               display: grid;
+               grid-template-columns: repeat(4, 1fr);
+               gap: 20px;
+          }
+
+          @media (max-width: 768px) {
+               .gallery {
+                    grid-template-columns: repeat(2, 1fr);
+               }
+          }
+
+          .gallery img {
+               max-width: 100%;
+               height: auto;
+          }
+     </style>
+
+
+     <div style="margin-top: 30px;" class="container">
+          <div class="gallery">
+               <img id="imgg1" src="https://via.placeholder.com/500x350" alt="Image 1">
+               <img id="imgg2" src="https://via.placeholder.com/500x350" alt="Image 2">
+               <img id="imgg3" src="https://via.placeholder.com/500x350" alt="Image 3">
+               <img id="imgg4" src="https://via.placeholder.com/500x350" alt="Image 4">
+               <img id="imgg5" src="https://via.placeholder.com/500x350" alt="Image 5">
+               <img id="imgg6" src="https://via.placeholder.com/500x350" alt="Image 6">
+               <img id="imgg7" src="https://via.placeholder.com/500x350" alt="Image 7">
+               <img id="imgg8" src="https://via.placeholder.com/500x350" alt="Image 8">
+          </div>
+     </div>
+
 
      <!-- TEAM -->
      <section id="team" data-stellar-background-ratio="1">
@@ -239,7 +334,7 @@ http://www.tooplate.com/view/2098-health
 
                     <div class="col-md-6 col-sm-6">
                          <div class="about-info">
-                              <h2 class="wow fadeInUp" data-wow-delay="0.1s">Founders</h2>
+                              <h2 id="s2t" class="wow fadeInUp" data-wow-delay="0.1s">Founders</h2>
                          </div>
                     </div>
 
@@ -309,7 +404,6 @@ http://www.tooplate.com/view/2098-health
           </div>
      </section>
 
-
      <!-- NEWS -->
      <section id="news" data-stellar-background-ratio="2.5">
           <div class="container">
@@ -318,7 +412,7 @@ http://www.tooplate.com/view/2098-health
                     <div class="col-md-12 col-sm-12">
                          <!-- SECTION TITLE -->
                          <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                              <h2>Activities</h2>
+                              <h2 id="s3t">Activities</h2>
                          </div>
                     </div>
 
@@ -326,7 +420,9 @@ http://www.tooplate.com/view/2098-health
                          <!-- NEWS THUMB -->
                          <div class="news-thumb wow fadeInUp" data-wow-delay="0.4s">
                               <a href="#">
-                                   <img id="aoi"
+                                   <img id="aoi" style="width: 100%;
+                                   height: 200px;
+                                   object-fit: cover;"
                                         src="https://www.agewellfoundation.org/wp-content/uploads/2014/05/SM92845.jpeg"
                                         class="img-responsive" alt="">
                               </a>
@@ -349,7 +445,9 @@ http://www.tooplate.com/view/2098-health
                          <!-- NEWS THUMB -->
                          <div class="news-thumb wow fadeInUp" data-wow-delay="0.6s">
                               <a href="#">
-                                   <img id="ati"
+                                   <img id="ati" style="width: 100%;
+                                   height: 200px;
+                                   object-fit: cover;"
                                         src="https://im.indiatimes.in/media/content/2018/Mar/embed_1520746419_725x725.jpg"
                                         class="img-responsive" alt=""
                                         style="object-fit: cover; height: 230px; width: 100%;">
@@ -374,7 +472,9 @@ http://www.tooplate.com/view/2098-health
                          <!-- NEWS THUMB -->
                          <div class="news-thumb wow fadeInUp" data-wow-delay="0.8s">
                               <a href="#">
-                                   <img id="athi"
+                                   <img id="athi" style="width: 100%;
+                                   height: 200px;
+                                   object-fit: cover;"
                                         src="https://akm-img-a-in.tosshub.com/indiatoday/the-elderly-may7-1_647_042718011551.jpg"
                                         class="img-responsive" alt="">
                               </a>
@@ -401,7 +501,9 @@ http://www.tooplate.com/view/2098-health
                          <!-- NEWS THUMB -->
                          <div class="news-thumb wow fadeInUp" data-wow-delay="0.4s">
                               <a href="#">
-                                   <img id="afi"
+                                   <img id="afi" style="width: 100%;
+                                   height: 200px;
+                                   object-fit: cover;"
                                         src="https://www.agewellfoundation.org/wp-content/uploads/2014/05/SM92845.jpeg"
                                         class="img-responsive" alt="">
                               </a>
@@ -424,7 +526,9 @@ http://www.tooplate.com/view/2098-health
                          <!-- NEWS THUMB -->
                          <div class="news-thumb wow fadeInUp" data-wow-delay="0.6s">
                               <a href="#">
-                                   <img id="afii"
+                                   <img id="afii" style="width: 100%;
+                                   height: 200px;
+                                   object-fit: cover;"
                                         src="https://im.indiatimes.in/media/content/2018/Mar/embed_1520746419_725x725.jpg"
                                         class="img-responsive" alt=""
                                         style="object-fit: cover; height: 230px; width: 100%;">
@@ -449,7 +553,9 @@ http://www.tooplate.com/view/2098-health
                          <!-- NEWS THUMB -->
                          <div class="news-thumb wow fadeInUp" data-wow-delay="0.8s">
                               <a href="#">
-                                   <img id="asi"
+                                   <img id="asi" style="width: 100%;
+                                   height: 200px;
+                                   object-fit: cover;"
                                         src="https://akm-img-a-in.tosshub.com/indiatoday/the-elderly-may7-1_647_042718011551.jpg"
                                         class="img-responsive" alt="">
                               </a>
@@ -479,7 +585,7 @@ http://www.tooplate.com/view/2098-health
 
                     <div class="col-md-6 col-sm-6">
                          <div class="about-info">
-                              <h2 class="wow fadeInUp" data-wow-delay="0.1s">Requirements For Admission</h2>
+                              <h2 id="s4t" class="wow fadeInUp" data-wow-delay="0.1s">Requirements For Admission</h2>
                          </div>
                     </div>
 
@@ -531,18 +637,16 @@ http://www.tooplate.com/view/2098-health
           <div class="container">
 
                <div class="about-info">
-                    <h2 class="wow fadeInUp" data-wow-delay="0.1s">Donation</h2>
+                    <h2 id="s5t" class="wow fadeInUp" data-wow-delay="0.1s">Donation</h2>
                </div>
 
 
-               <a id="dl" href="#" style="background-color: rgb(255, 102, 0);"
-                    class="section-btn btn btn-default btn-gray smoothScroll">
-                    Make Donation</a>
+               <form>
+                    <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                         data-payment_button_id="pl_LikZ3fLqnCZU8C" async> </script>
+               </form>
           </div>
      </section>
-
-
-
 
      <!-- MAKE AN APPOINTMENT -->
      <section id="appointment" data-stellar-background-ratio="3">
@@ -561,7 +665,7 @@ http://www.tooplate.com/view/2098-health
 
                               <!-- SECTION TITLE -->
                               <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
-                                   <h2>Make an appointment</h2>
+                                   <h2 id="s6t">Make an appointment</h2>
                               </div>
 
                               <div class="wow fadeInUp" data-wow-delay="0.8s">
@@ -610,7 +714,6 @@ http://www.tooplate.com/view/2098-health
 
 
 
-
      <br><br><br>
 
      <!-- GOOGLE MAP -->
@@ -635,7 +738,7 @@ http://www.tooplate.com/view/2098-health
 
                     <div class="col-md-4 col-sm-4">
                          <div class="footer-thumb">
-                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>
+                              <h4 id="s7t" class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>
                               <p id="cn">Alzheimer's Dementia's Daycare And Fulltime Care Home</p>
 
                               <div class="contact-info">
@@ -647,7 +750,7 @@ http://www.tooplate.com/view/2098-health
 
                     <div class="col-md-4 col-sm-4">
                          <div class="footer-thumb">
-                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Address</h4>
+                              <h4 id="s8t" class="wow fadeInUp" data-wow-delay="0.4s">Address</h4>
                               <div class="latest-stories">
                                    <!-- <div class="stories-image">
                                         <a href="#"><img src="images/news-image.jpg" class="img-responsive" alt=""></a>
@@ -678,12 +781,12 @@ http://www.tooplate.com/view/2098-health
                     <div class="col-md-4 col-sm-4">
                          <div class="footer-thumb">
                               <div class="opening-hours">
-                                   <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
-                                   <p><span>Monday - Friday </span><span id="mfs">06:00 AM</span>- <span id="mfe">10:00
+                                   <h4 id="s9t" class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
+                                   <p><span>Monday - Friday </span><span id="mfs">12:00 AM</span>- <span id="mfe">12:00
                                              PM</span></p>
-                                   <p><span>Saturday</span> <span id="sats">09:00 AM</span>-<span id="sate">08:00
+                                   <p><span>Saturday</span> <span id="sats">12:00 AM</span>-<span id="sate">12:00
                                              PM</span></p>
-                                   <p><span>Sunday</span> <span id="suns">09:00 AM</span>-<span id="sune">08:00
+                                   <p><span>Sunday</span> <span id="suns">12:00 AM</span>-<span id="sune">12:00
                                              PM</span></p>
                               </div>
 
@@ -771,12 +874,37 @@ http://www.tooplate.com/view/2098-health
                     document.getElementById("cpn").innerHTML = data.cpn;
                     document.getElementById("ait").innerHTML = data.ait;
                     document.getElementById("dai").innerHTML = data.dai;
-                    document.getElementById("mfs").innerHTML = data.mfs;
-                    document.getElementById("mfe").innerHTML = data.mfe;
-                    document.getElementById("sats").innerHTML = data.sats;
-                    document.getElementById("sate").innerHTML = data.sate;
-                    document.getElementById("suns").innerHTML = data.suns;
-                    document.getElementById("sune").innerHTML = data.sune;
+                    //time
+                    document.getElementById("mfs").textContent = data.mfs;
+                    document.getElementById("mfe").textContent = data.mfe;
+                    document.getElementById("sats").textContent = data.sats;
+                    document.getElementById("sate").textContent = data.sate;
+                    document.getElementById("suns").textContent = data.suns;
+                    document.getElementById("sune").textContent = data.sune;
+                    // today
+                    document.getElementById("imgg1").setAttribute("src", data.imgg1);
+                    document.getElementById("imgg2").setAttribute("src", data.imgg2);
+                    document.getElementById("imgg3").setAttribute("src", data.imgg3);
+                    document.getElementById("imgg4").setAttribute("src", data.imgg4);
+                    document.getElementById("imgg5").setAttribute("src", data.imgg5);
+                    document.getElementById("imgg6").setAttribute("src", data.imgg6);
+                    document.getElementById("imgg7").setAttribute("src", data.imgg7);
+                    document.getElementById("imgg8").setAttribute("src", data.imgg8);
+                    document.getElementById("s1t").innerHTML = data.s1t;
+                    document.getElementById("s2t").innerHTML = data.s2t;
+                    document.getElementById("s3t").innerHTML = data.s3t;
+                    document.getElementById("s4t").innerHTML = data.s4t;
+                    document.getElementById("s5t").innerHTML = data.s5t;
+                    document.getElementById("s6t").innerHTML = data.s6t;
+                    document.getElementById("s7t").innerHTML = data.s7t;
+                    document.getElementById("s8t").innerHTML = data.s8t;
+                    document.getElementById("s9t").innerHTML = data.s9t;
+                    document.getElementById("vidg1").src = data.vidg1;
+                    document.getElementById("vidg2").src = data.vidg2;
+                    document.getElementById("vidg3").src = data.vidg3;
+                    document.getElementById("vidg4").src = data.vidg4;
+
+
                })
                .catch(error => {
                     console.log(error);
